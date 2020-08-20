@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+<style type="text/css">@media screen and (min-width:768px){
+				.laundry-cat {display: flex;}
+			}
+			.laundry-cat .cells{padding: 5px; flex: 1;}
+			.laundry-cat .cells div{position: relative;}
+			.laundry-cat .cells .shopnow{position: absolute; top: 0; height: 50%; left:0; background-color: #204181; width: 100%; display: block; clip-path: circle(.5% at 50% 100%); transition: clip-path .2s; color: white;}
+			.laundry-cat .cells a{text-decoration: none; color: #333;}
+			.laundry-cat .cells .appcont{background-color:#CCCCCC; text-align: center; padding: 5px; border-bottom: 8px solid #ccc;}
+			.laundry-cat .cells .appcont img{transition: all .2s;}
+			.laundry-cat .cells .appcont:hover{border-radius: 0 0 5px 5px; border-bottom: 8px solid #204181;}
+			.laundry-cat .cells .appcont:hover .shopnow{clip-path: circle(100% at 50% 100%);}
+			.laundry-cat .cells .appcont:hover img{transform:scale(.7);}
+			.laundry-cat .cells .appcont p{float: left; margin: 2% 10px; font-size: 30px; font-weight: 700;}
+			@media screen and (max-width:375px){
+				.laundry-cat .cells .shopnow{clip-path: circle(100% at 50% 50%);}
+				.laundry-cat .cells .appcont{border-radius: 0 0 5px 5px; border-bottom: 8px solid #204181;}
+				.laundry-cat .cells .appcont img{transform:scale(.8);}
+			}
+</style>
